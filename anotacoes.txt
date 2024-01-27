@@ -1,0 +1,10 @@
+Arquivo para anotações do projeto RPi3 + BME280:
+
+Detecção do endereção do sensor na rede I2C:
+sudo i2cdetect -y 1
+
+Inclusão de execução automatica no inicio:
+/etc/rc.local
+python3 /home/andre/Documents/Python_Projects/notificacao.py &
+
+
