@@ -1,3 +1,6 @@
+#data logging:
+sensor_readings_bme280.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
