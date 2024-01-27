@@ -19,12 +19,12 @@ calibration_params = bme280.load_calibration_params(bus, address)
 running = True
 
 # Check if the file exists before opening it in 'a' mode (append mode)
-file_exists = os.path.isfile('sensor_readings_bme280.txt')
-file = open('sensor_readings_bme280.txt', 'a')
+file_exists = os.path.isfile('sensor_bme280.txt')
+file = open('sensor_bme280.txt', 'a')
 
 # Write the header to the file if the file does not exist
 if not file_exists:
-    file.write('Time and Date, temperature (ºC), temperature (ºF), humidity (%), pressure (hPa)\n')
+    file.write('Hora e data, temperatura (ºC), Ponto de Orvalho (ºC), Umidade relativa (%), pressão (hPa)\n')
 
 # loop forever
 while running:
@@ -46,14 +46,18 @@ while running:
         timestamp_tz = timestamp.replace(tzinfo=pytz.utc).astimezone(desired_timezone)
 
         # Convert temperature to Fahrenheit
-        temperature_fahrenheit = (temperature_celsius * 9/5) + 32
+        # temperature_fahrenheit = (temperature_celsius * 9/5) + 32
+
+        # Calcula ponto de orvalho:
+        dewPoint = ((humidity/100)**0.125) * (112 + 0.9*temperature_celsius) + (0.1*temperature_celsius - 112)
 
         # Print the readings
-        print(timestamp_tz.strftime('%H:%M:%S %d/%m/%Y') + " Temp={0:0.1f}ºC, Temp={1:0.1f}ºF, Humidity={2:0.1f}%, Pressure={3:0.2f}hPa".format(temperature_celsius, temperature_fahrenheit, humidity, pressure))
+        print(timestamp_tz.strftime('%H:%M:%S %d/%m/%Y') + " Temp={0:0.1f}ºC, PO={1:0.1f}ºC, umidade={2:0.1f}%, Pressão={3:0.2f}hPa".format(temperature_celsius, dewPoint, humidity, pressure))
 
         # Save time, date, temperature, humidity, and pressure in .txt file
         #file.append... para continuar no mesmo arquivo.
-        file.write(timestamp_tz.strftime('%H:%M:%S %d/%m/%Y') + ', {:.2f}, {:.2f}, {:.2f}, {:.2f}\n'.format(temperature_celsius, temperature_fahrenheit, humidity, pressure))
+        #strftime -> converte para string data,hora do servidor para ser registrado
+        file.write(timestamp_tz.strftime('%H:%M:%S %d/%m/%Y') + ', {:.2f}, {:.2f}, {:.2f}, {:.2f}\n'.format(temperature_celsius, dewPoint, humidity, pressure))
 
         #Tempo de atualização do sensor para o arquivo
         time.sleep(60)
