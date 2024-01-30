@@ -11,5 +11,7 @@ Inserção em Banco de dados MySql das principais váriaveis do sensor.
 
 ###### Melhorias futuras:
 
-Disponibilização dos dados para analise *em pagina PHP.*
+_Disponibilização dos dados para analise em pagina PHP._
+_Interligação com outros sensores;_
+
 
