@@ -1,6 +1,6 @@
-# raspberry
-Projetos em Python para raspberry Pi
-teste
+# Raspberry
+Projetos em Python para **raspberry Pi!**
+
 
 ## Funcionalidades:
 
@@ -11,6 +11,5 @@ Inserção em Banco de dados MySql das principais váriaveis do sensor.
 
 ###### Melhorias futuras:
 
-Disponibilização dos dados para analise em pagina PHP.
-
+Disponibilização dos dados para analise *em pagina PHP.*
 
