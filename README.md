@@ -15,3 +15,8 @@ _Disponibilização dos dados para analise em pagina PHP._
 _Interligação com outros sensores;_
 
 
+###Linguagens do Projeto:
+
+* Python
+* SQL
+* PHP
