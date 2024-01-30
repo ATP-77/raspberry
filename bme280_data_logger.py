@@ -52,12 +52,15 @@ while running:
         dewPoint = ((humidity/100)**0.125) * (112 + 0.9*temperature_celsius) + (0.1*temperature_celsius - 112)
 
         # Print the readings
-        print(timestamp_tz.strftime('%H:%M:%S %d/%m/%Y') + " Temp={0:0.1f}ºC, PO={1:0.1f}ºC, umidade={2:0.1f}%, Pressão={3:0.2f}hPa".format(temperature_celsius, dewPoint, humidity, pressure))
+        #print(timestamp_tz.strftime('%H:%M:%S %d/%m/%Y') + " Temp={0:0.1f}ºC, PO={1:0.1f}ºC, umidade={2:0.1f}%, Pressão={3:0.2f}hPa".format(temperature_celsius, dewPoint, humidity, pressure))
+        print(timestamp_tz.strftime('%Y/%m/%d %H:%M:%S') + " Temp={0:0.1f}ºC, PO={1:0.1f}ºC, umidade={2:0.1f}%, Pressão={3:0.2f}hPa".format(temperature_celsius, dewPoint, humidity, pressure))
 
         # Save time, date, temperature, humidity, and pressure in .txt file
         #file.append... para continuar no mesmo arquivo.
         #strftime -> converte para string data,hora do servidor para ser registrado
-        file.write(timestamp_tz.strftime('%H:%M:%S %d/%m/%Y') + ', {:.2f}, {:.2f}, {:.2f}, {:.2f}\n'.format(temperature_celsius, dewPoint, humidity, pressure))
+        #file.write(timestamp_tz.strftime('%H:%M:%S %d/%m/%Y') + ', {:.2f}, {:.2f}, {:.2f}, {:.2f}\n'.format(temperature_celsius, dewPoint, humidity, pressure))
+        file.write(timestamp_tz.strftime('%Y/%m/%d %H:%M:%S') + ', {:.2f}, {:.2f}, {:.2f}, {:.2f}\n'.format(temperature_celsius, dewPoint, humidity, pressure))
+
 
         #Tempo de atualização do sensor para o arquivo
         time.sleep(60)
