@@ -30,6 +30,13 @@ Inserção em Banco de dados MySql das principais váriaveis do sensor.
 
 ![Imagem externa](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png)
 
+#### Links Interessantes! ####
+
+[Google](https://www.google.com.br)
+
+
+
+
 
 
 
