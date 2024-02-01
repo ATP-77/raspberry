@@ -37,7 +37,7 @@ Inserção em Banco de dados MySql das principais váriaveis do sensor.
 ### Lista de Tarefas ###
 
 - [ ] Codigo 1
-- [ X ] Codigo SQL
+- [X] Codigo SQL
 
 ``` Python
 
