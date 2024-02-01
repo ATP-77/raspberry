@@ -24,7 +24,12 @@ Inserção em Banco de dados MySql das principais váriaveis do sensor.
 
 #### **Imagem local:**
 
-![Imagem a ser portada](/raspberry/TechPriest.jpg)
+![Imagem a ser postada](/raspberry/TechPriest.jpg)
+
+#### **Imagem externa:**
+
+![Imagem externa](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png)
+
 
 
 
