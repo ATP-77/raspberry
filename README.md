@@ -34,7 +34,15 @@ Inserção em Banco de dados MySql das principais váriaveis do sensor.
 
 [Google](https://www.google.com.br)
 
+### Lista de Tarefas ###
 
+- [ ] Codigo 1
+- [ X ] Codigo SQL
+
+``` Python
+
+``` def soma (a, b)
+        return a + b```
 
 
 
