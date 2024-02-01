@@ -11,12 +11,20 @@ Inserção em Banco de dados MySql das principais váriaveis do sensor.
 
 ###### Melhorias futuras:
 
-_Disponibilização dos dados para analise em pagina PHP._
-_Interligação com outros sensores;_
+1. _Disponibilização dos dados para analise em pagina PHP._
+2. _Interligação com outros sensores;_
+    1. ESP-32;
 
 
-###Linguagens do Projeto:
+### Linguagens do Projeto:
 
 * Python
 * SQL
 * PHP
+
+#### **Imagem local:**
+
+![Imagem a ser portada](/raspberry/TechPriest.jpg)
+
+
+
