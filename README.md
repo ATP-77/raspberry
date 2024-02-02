@@ -16,34 +16,6 @@ Inserção em Banco de dados MySql das principais váriaveis do sensor.
     1. ESP-32;
 
 
-### Linguagens do Projeto:
-
-* Python
-* SQL
-* PHP
-
-#### **Imagem local:**
-
-![Imagem a ser postada](/raspberry/TechPriest.jpg)
-
-#### **Imagem externa:**
-
-![Imagem externa](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png)
-
-#### Links Interessantes! ####
-
-[Google](https://www.google.com.br)
-
-### Lista de Tarefas ###
-
-- [ ] Codigo 1
-- [X] Codigo SQL
-
-``` Python
-
-``` def soma (a, b)
-        return a + b```
-
 
 
 
